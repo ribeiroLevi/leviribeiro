@@ -46,7 +46,7 @@ export function App() {
       <div className="w-full flex flex-col h-2/3 items-center justify-center">
         <div className="h-screen w-11/12 flex flex-row items-center justify-between">
           <div className="w-1/2 flex justify-start">
-            <h1 className="w-1 text-7xl font-gabarito">Sobre Mim</h1>
+            <h1 className="w-1 text-7xl font-gabarito ">Sobre mim</h1>
           </div>
           <p className="w-1/2 text-2xl font-gabarito">
             Curso Sistemas e Mídias Digitais, na Universidade Federal do Ceará,
@@ -80,35 +80,35 @@ export function App() {
             />
 
             <Experiences
-              titleBold={"Monitor de Cognição e Tecnologias Digitais"}
-              title={", UFC - Bolsista Remunerado"}
+              titleBold={"Monitoria de Cognição e Tecnologias Digitais"}
+              title={", UFC - Monitor Remunerado"}
               dateSpan={"Maio de 2024 a Setembro de 2024"}
               description={
                 "Auxiliava os alunos da disciplina de Cognição e Tecnologias Digitais no Instituto UFC Virtual."
               }
             />
             <Experiences
-              titleBold={"Container Digital Jr"}
-              title={", UFC - Projetista e Líder de Projetos"}
-              dateSpan={"Maio de 2023 a Janeiro de 2024"}
+              titleBold={"Laboratório de Computação Física"}
+              title={", UFC - Bolsista Voluntário"}
+              dateSpan={"Dezembro de 2023 a Janeiro de 2025"}
               description={
-                "Desenvolvi aplicações WEB com HTML, CSS, JavaScript Vanilla e ReactJS. Atuei como Líder de Projetos em projeto de capacitação interna."
+                "Desenvolvi projetos que integram Eletrônica e Impressão 3D. Entre eles, projetos para o Processo Seletivo e, atualmente, desenvolve o projeto “FigMate” e compõe a equipe de projeto conjunto com o curso de Enfermagem."
               }
             />
             <Experiences
-              titleBold={"Container Digital Jr"}
-              title={", UFC - Projetista e Líder de Projetos"}
+              titleBold={"Célula de Design Multimídia"}
+              title={", UFC - Desenvolvedor e Pesquisador"}
               dateSpan={"Maio de 2023 a Janeiro de 2024"}
               description={
-                "Desenvolvi aplicações WEB com HTML, CSS, JavaScript Vanilla e ReactJS. Atuei como Líder de Projetos em projeto de capacitação interna."
+                "Estou desenvolvendo jogo em Unity para pesquisa em Dark Patterns e bem-estar digital. Programei o protótipo do mesmo que foi apresentado no Simpósio Brasileiro sobre Fatores Humanos em Sistemas Computacionais (IHC, 2024). Também desenvolvi o site atual do grupo e pesquiso na área de dark patterns."
               }
             />
             <Experiences
-              titleBold={"Container Digital Jr"}
-              title={", UFC - Projetista e Líder de Projetos"}
-              dateSpan={"Maio de 2023 a Janeiro de 2024"}
+              titleBold={"iREDE"}
+              title={", Apple Developer Academy Residency - Design UI/UX"}
+              dateSpan={"Desde Fevereiro de 2025"}
               description={
-                "Desenvolvi aplicações WEB com HTML, CSS, JavaScript Vanilla e ReactJS. Atuei como Líder de Projetos em projeto de capacitação interna."
+                "Atuo como UI/UX de uma das aplicações multiplataforma (iOS, MacOS e VisionOS) para atender aos programas da Apple sediados em regiões interioranas do Brasil."
               }
             />
           </div>
