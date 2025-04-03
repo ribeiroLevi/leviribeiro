@@ -3,7 +3,7 @@ interface sectionHeaderProps {
   bigTitle: String;
   description: String;
 }
-export function sectionHeader({
+export function SectionHeader({
   littleTitle,
   bigTitle,
   description,

@@ -2,6 +2,16 @@ import { MoveDown } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 import "./index.css";
 import { Experiences } from "./components/experiences";
+import { SectionHeader } from "./components/sectionHeader";
+import { Project } from "./components/project";
+import TheGoodDev from "./assets/TheGoodDev.png";
+import Deck from "./assets/DECK.png";
+import Zefiro from "./assets/Zefiro.png";
+import SenhorPatinhas from "./assets/SenhorPatinhas.png";
+import SementinhaDoMal from "./assets/SementinhaDoMal.png";
+import MidiPie from "./assets/MidipIE.png";
+import Alexandria from "./assets/Alexandria.png";
+
 export function App() {
   return (
     <>
@@ -61,13 +71,14 @@ export function App() {
       <div className="w-full flex flex-col h-2/3  items-center justify-center">
         <div className="w-11/12 font-gabarito gap-10 flex flex-col">
           <div>
+            <SectionHeader
+              littleTitle={"MINHAS"}
+              bigTitle={"Experiências"}
+              description={
+                "Adentrei a o universo do design e desenvolvimento desde o primeiro semestre da univerisdade e desde então nunca mais parei de me envolver em projetos e iniciativas"
+              }
+            />
             <p>MINHAS</p>
-            <h1 className="text-6xl">Experiências</h1>
-            <p className="text-xl">
-              Adentrei o universo do design e desenvolvimento desde o primeiro
-              semestre da universidade e desde então nunca parei de me envolver
-              em projetos e iniciativas.
-            </p>
           </div>
           <div className="flex flex-col">
             <Experiences
@@ -110,6 +121,67 @@ export function App() {
               description={
                 "Atuo como UI/UX de uma das aplicações multiplataforma (iOS, MacOS e VisionOS) para atender aos programas da Apple sediados em regiões interioranas do Brasil."
               }
+            />
+          </div>
+          <SectionHeader
+            littleTitle={"MEUS"}
+            bigTitle={"Projetos"}
+            description={
+              "Vindo de um background muito diverso, meus projetos navegam entre o design, a programação, sistemas embarcados, modelagem e impressão 3D e outros. Em todos os projetos, principalmente os pessoais, tento adicionar um poucos de personalidade de maneira que eles atendam à necessidade ao mesmo tempo que não são ”só mais um na multidão”."
+            }
+          />
+          <div className="gap-2 flex flex-row overflow-auto">
+            <Project
+              title={"The Good Dev"}
+              year={"Em Andamento"}
+              description={
+                "Jogo mobile para conscientização sobre dark patterns em jogos."
+              }
+              image={TheGoodDev}
+            />
+            <Project
+              title={"Zéfiro"}
+              year={"2025"}
+              description={
+                "Projeto para solucionar o problema do calor no bloco do curso de Sistemas e Mídias Digitais."
+              }
+              image={Zefiro}
+            />
+            <Project
+              title={"DECK"}
+              year={"2024"}
+              description={
+                "Rede social de projetos voltado para o curso de Sistemas e Mídias Digitais."
+              }
+              image={Deck}
+            />
+            <Project
+              title={"MidiPie"}
+              year={"2024"}
+              description={
+                "Sintetizador WEB que interpreta sinais MIDI e transforma em som."
+              }
+              image={MidiPie}
+            />
+            <Project
+              title={"Alexandria"}
+              year={"2023"}
+              description={"Biblioteca de cartas do jogo Magic The Gathering."}
+              image={Alexandria}
+            />
+            <Project
+              title={"Sementinha do Mal"}
+              year={"2023"}
+              description={"MIDI construído com Arduino e Impressão 3D."}
+              image={SementinhaDoMal}
+            />
+            <Project
+              title={"Senhor Patinhas"}
+              year={"2023"}
+              description={
+                "Curta que faz paródia de produções Noir dos anos 40."
+              }
+              image={SenhorPatinhas}
             />
           </div>
         </div>
