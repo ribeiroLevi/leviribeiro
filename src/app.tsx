@@ -20,7 +20,7 @@ export function App() {
           <p className="font-gabarito text-xl">levi ribeiro</p>
           <div className="font-gabarito flex flex-row gap-6">
             <a href="">sobre</a>
-            <a href="">experiências</a>
+            <a href="#experiences">experiências</a>
             <a href="">projetos</a>
             <a href="">artigos</a>
           </div>
@@ -53,8 +53,8 @@ export function App() {
         </div>
         <MoveDown className="size-8 mb-3 -mt-9" />
       </div>
-      <div className="w-full flex flex-col h-2/3 items-center justify-center">
-        <div className="h-screen w-11/12 flex flex-row items-center justify-between">
+      <div className="w-full flex flex-col  items-center justify-center">
+        <div className="h-92 my-24 w-11/12 flex flex-row items-center justify-between">
           <div className="w-1/2 flex justify-start">
             <h1 className="w-1 text-7xl font-gabarito ">Sobre mim</h1>
           </div>
@@ -68,7 +68,10 @@ export function App() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col h-2/3  items-center justify-center">
+      <div
+        id="experiences"
+        className="w-full flex flex-col h-2/3 scroll-smooth  items-center justify-center"
+      >
         <div className="w-11/12 font-gabarito gap-10 flex flex-col">
           <div>
             <SectionHeader
