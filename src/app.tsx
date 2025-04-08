@@ -16,13 +16,13 @@ export function App() {
   return (
     <>
       <div className="w-full flex flex-col h-screen items-center justify-center">
-        <nav className="flex flex-row justify-between items-center w-11/12 h-20">
+        <nav className="sticky top-0 z-50 flex bg-white flex-row justify-between items-center w-11/12 h-20">
           <p className="font-gabarito text-xl">levi ribeiro</p>
           <div className="font-gabarito flex flex-row gap-6">
-            <a href="">sobre</a>
-            <a href="#experiences">experiências</a>
-            <a href="">projetos</a>
-            <a href="">artigos</a>
+            <a href="#about">sobre</a>
+            {/*<a href="#experiences">experiências</a>*/}
+            <a href="#projects">projetos</a>
+            <a href="#articles">artigos</a>
           </div>
         </nav>
         <div className="w-ful h-full flex flex-col gap-1 justify-center items-center">
@@ -53,7 +53,10 @@ export function App() {
         </div>
         <MoveDown className="size-8 mb-3 -mt-9" />
       </div>
-      <div className="w-full flex flex-col  items-center justify-center">
+      <div
+        id="about"
+        className="w-full flex flex-col  items-center justify-center"
+      >
         <div className="h-92 my-24 w-11/12 flex flex-row items-center justify-between">
           <div className="w-1/2 flex justify-start">
             <h1 className="w-1 text-7xl font-gabarito ">Sobre mim</h1>
@@ -73,7 +76,7 @@ export function App() {
         className="w-full flex flex-col h-2/3 scroll-smooth  items-center justify-center"
       >
         <div className="w-11/12 font-gabarito gap-10 flex flex-col">
-          <div>
+          {/*<div>
             <SectionHeader
               littleTitle={"MINHAS"}
               bigTitle={"Experiências"}
@@ -83,7 +86,7 @@ export function App() {
             />
             <p>MINHAS</p>
           </div>
-          <div className="flex flex-col">
+            <div className="flex flex-col">
             <Experiences
               titleBold={"Container Digital Jr"}
               title={", UFC - Projetista e Líder de Projetos"}
@@ -125,7 +128,9 @@ export function App() {
                 "Atuo como UI/UX de uma das aplicações multiplataforma (iOS, MacOS e VisionOS) para atender aos programas da Apple sediados em regiões interioranas do Brasil."
               }
             />
-          </div>
+          </div> */}
+
+          <div id="projects"></div>
           <SectionHeader
             littleTitle={"MEUS"}
             bigTitle={"Projetos"}
@@ -133,7 +138,7 @@ export function App() {
               "Vindo de um background muito diverso, meus projetos navegam entre o design, a programação, sistemas embarcados, modelagem e impressão 3D e outros. Em todos os projetos, principalmente os pessoais, tento adicionar um poucos de personalidade de maneira que eles atendam à necessidade ao mesmo tempo que não são ”só mais um na multidão”."
             }
           />
-          <div className="gap-2 flex flex-row overflow-auto">
+          <div className="gap-2 mb-24 flex flex-row overflow-auto">
             <Project
               title={"The Good Dev"}
               year={"Em Andamento"}
