@@ -26,7 +26,7 @@ export function App() {
           </div>
         </nav>
         <div className="w-ful h-full flex flex-col gap-1 justify-center items-center">
-          <p className="text-[307px] leading-44 font-bebas">LEVI RIBEIRO</p>
+          <p className="md:text-[307px] text-9xl leading-25 md:leading-44 font-bebas">LEVI RIBEIRO</p>
           <TypeAnimation
             sequence={[
               // Same substring at the start will only be typed out once, initially
@@ -59,9 +59,9 @@ export function App() {
       >
         <div className="h-92 my-24 w-11/12 flex flex-row items-center justify-between">
           <div className="w-1/2 flex justify-start">
-            <h1 className="w-1 text-7xl font-gabarito ">Sobre mim</h1>
+            <h1 className="w-1 text-2xl md:text-7xl font-gabarito ">Sobre mim</h1>
           </div>
-          <p className="w-1/2 text-2xl font-gabarito">
+          <p className="w-2/3 md:w-1/2 md:text-2xl font-gabarito">
             Curso Sistemas e Mídias Digitais, na Universidade Federal do Ceará,
             com foco em UX Researching. Apesar de trabalhar majoritariamente com
             UI/UX, também programo em React e C# para desenvolvimento de jogos.
@@ -138,7 +138,7 @@ export function App() {
               "Vindo de um background muito diverso, meus projetos navegam entre o design, a programação, sistemas embarcados, modelagem e impressão 3D e outros. Em todos os projetos, principalmente os pessoais, tento adicionar um poucos de personalidade de maneira que eles atendam à necessidade ao mesmo tempo que não são ”só mais um na multidão”."
             }
           />
-          <div className="gap-2 mb-24 flex flex-row overflow-auto">
+          <div className="gap-2 mb-24 flex flex-row justify-center py-9 overflow-x-scroll">
             <Project
               title={"The Good Dev"}
               year={"Em Andamento"}
