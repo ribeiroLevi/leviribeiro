@@ -3,17 +3,28 @@ interface ProjectProps {
   year: String;
   description: String;
   image: string;
+  link: string;
 }
 
-export function Project({ title, year, description, image }: ProjectProps) {
+export function Project({
+  title,
+  year,
+  description,
+  image,
+  link,
+}: ProjectProps) {
   return (
-    <div>
-      <img className="w-52 rounded-2xl" src={image} alt="" />
-      <div className="flex flex-row items-baseline gap-1">
-        <p className="text-2xl ">{title}</p>
-        <p className="text-gray-500">{year}</p>
+    <a href={link}>
+      <div>
+        <img className="w-11/12 mx-auto rounded-2xl mb-3" src={image} alt="" />
+        <div className="flex flex-col items-baseline">
+          <p className="text-2xl">{title}</p>
+          <p className="text-gray-500">{year}</p>
+        </div>
+        <p className="w-full text-xl lg:text-md md:w-3/4 lg:w-5/6">
+          {description}
+        </p>
       </div>
-      <p className="w-56">{description}</p>
-    </div>
+    </a>
   );
 }

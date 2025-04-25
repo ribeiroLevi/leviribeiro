@@ -9,10 +9,10 @@ export function SectionHeader({
   description,
 }: sectionHeaderProps) {
   return (
-    <div>
+    <div className="w-11/12">
       <p>{littleTitle}</p>
-      <h1 className="text-6xl">{bigTitle}</h1>
-      <p className="text-xl">{description}</p>
+      <h1 className="text-4xl lg:text-6xl">{bigTitle}</h1>
+      <p className="text-md lg:text-xl">{description}</p>
     </div>
   );
 }
