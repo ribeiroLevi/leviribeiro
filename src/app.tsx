@@ -61,7 +61,7 @@ export function App() {
       >
         <div className="lg:h-92 my-32 md:my-24 lg:my-24 w-full lg:w-11/12 flex flex-col lg:flex-row items-center lg:justify-between">
           <div className="text-2xl justify-center w-1/2 flex lg:justify-start">
-            <h1 className="lg:w-1 lg:text-7xl font-gabarito font-bold ">
+            <h1 className="lg:w-1 lg:text-7xl font-gabarito font-bold lg:font-normal ">
               Sobre mim
             </h1>
           </div>
@@ -142,7 +142,7 @@ export function App() {
               "Vindo de um background muito diverso, meus projetos navegam entre o design, a programação, sistemas embarcados, modelagem e impressão 3D e outros. Em todos os projetos, principalmente os pessoais, tento adicionar um poucos de personalidade de maneira que eles atendam à necessidade ao mesmo tempo que não são ”só mais um na multidão”."
             }
           />
-          <div className="gap-2 justify-center mb-24 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-12">
+          <div className="gap-6 justify-center mb-24 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-16">
             <Project
               link=""
               title={"The Good Dev"}

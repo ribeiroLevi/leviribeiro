@@ -16,7 +16,7 @@ export function Project({
   return (
     <a href={link}>
       <div>
-        <img className="w-11/12 mx-auto rounded-2xl mb-3" src={image} alt="" />
+        <img className="w-full mx-auto rounded-2xl mb-3" src={image} alt="" />
         <div className="flex flex-col items-baseline">
           <p className="text-2xl">{title}</p>
           <p className="text-gray-500">{year}</p>
