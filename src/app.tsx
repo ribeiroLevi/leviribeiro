@@ -143,6 +143,7 @@ export function App() {
             }
           />
           <div className="gap-6 justify-center mb-24 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-16">
+
             <Project
               link=""
               title={"The Good Dev"}
