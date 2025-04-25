@@ -1,7 +1,6 @@
 import { MoveDown } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 import "./index.css";
-import { Experiences } from "./components/experiences";
 import { SectionHeader } from "./components/sectionHeader";
 import { Project } from "./components/project";
 import TheGoodDev from "./assets/TheGoodDev.png";
@@ -22,11 +21,13 @@ export function App() {
             <a href="#about">sobre</a>
             {/*<a href="#experiences">experiências</a>*/}
             <a href="#projects">projetos</a>
-            <a href="#articles">artigos</a>
+            {/*<a href="#articles">artigos</a>*/}
           </div>
         </nav>
         <div className="w-ful h-full flex flex-col gap-1 justify-center items-center">
-          <p className="md:text-[307px] text-9xl leading-25 md:leading-44 font-bebas">LEVI RIBEIRO</p>
+          <p className="text-9xl lg:text-[307px] leading-25 lg:leading-44 font-bebas">
+            LEVI RIBEIRO
+          </p>
           <TypeAnimation
             sequence={[
               // Same substring at the start will only be typed out once, initially
@@ -45,6 +46,7 @@ export function App() {
             speed={50}
             style={{
               fontSize: "36px",
+              width: "50%",
               display: "inline-block",
               fontFamily: "Gabarito",
             }}
@@ -55,13 +57,15 @@ export function App() {
       </div>
       <div
         id="about"
-        className="w-full flex flex-col  items-center justify-center"
+        className="w-full flex flex-col items-center justify-center"
       >
-        <div className="h-92 my-24 w-11/12 flex flex-row items-center justify-between">
-          <div className="w-1/2 flex justify-start">
-            <h1 className="w-1 text-2xl md:text-7xl font-gabarito ">Sobre mim</h1>
+        <div className="lg:h-92 my-32 md:my-24 lg:my-24 w-full lg:w-11/12 flex flex-col lg:flex-row items-center lg:justify-between">
+          <div className="text-2xl justify-center w-1/2 flex lg:justify-start">
+            <h1 className="lg:w-1 lg:text-7xl font-gabarito font-bold lg:font-normal ">
+              Sobre mim
+            </h1>
           </div>
-          <p className="w-2/3 md:w-1/2 md:text-2xl font-gabarito">
+          <p className="text-center md:w-11/12 lg:w-1/2 lg:text-2xl font-gabarito">
             Curso Sistemas e Mídias Digitais, na Universidade Federal do Ceará,
             com foco em UX Researching. Apesar de trabalhar majoritariamente com
             UI/UX, também programo em React e C# para desenvolvimento de jogos.
@@ -138,8 +142,10 @@ export function App() {
               "Vindo de um background muito diverso, meus projetos navegam entre o design, a programação, sistemas embarcados, modelagem e impressão 3D e outros. Em todos os projetos, principalmente os pessoais, tento adicionar um poucos de personalidade de maneira que eles atendam à necessidade ao mesmo tempo que não são ”só mais um na multidão”."
             }
           />
-          <div className="gap-2 mb-24 flex flex-row justify-center py-9 overflow-x-scroll">
+          <div className="gap-6 justify-center mb-24 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-16">
+
             <Project
+              link=""
               title={"The Good Dev"}
               year={"Em Andamento"}
               description={
@@ -148,6 +154,7 @@ export function App() {
               image={TheGoodDev}
             />
             <Project
+              link=""
               title={"Zéfiro"}
               year={"2025"}
               description={
@@ -156,6 +163,7 @@ export function App() {
               image={Zefiro}
             />
             <Project
+              link="https://github.com/boxy-smd/deck-web"
               title={"DECK"}
               year={"2024"}
               description={
@@ -164,6 +172,7 @@ export function App() {
               image={Deck}
             />
             <Project
+              link="https://github.com/ribeiroLevi/MidiPie"
               title={"MidiPie"}
               year={"2024"}
               description={
@@ -172,18 +181,21 @@ export function App() {
               image={MidiPie}
             />
             <Project
+              link="https://github.com/ribeiroLevi/AlexandriaV2-MTG"
               title={"Alexandria"}
               year={"2023"}
               description={"Biblioteca de cartas do jogo Magic The Gathering."}
               image={Alexandria}
             />
             <Project
+              link="https://github.com/ribeiroLevi/SementinhaDoMal-MIDI"
               title={"Sementinha do Mal"}
               year={"2023"}
               description={"MIDI construído com Arduino e Impressão 3D."}
               image={SementinhaDoMal}
             />
             <Project
+              link="https://youtu.be/D-aFkgHhbcY"
               title={"Senhor Patinhas"}
               year={"2023"}
               description={
@@ -193,6 +205,9 @@ export function App() {
             />
           </div>
         </div>
+        <footer className="sticky top-0 z-50 flex bg-white flex-row justify-center items-center w-11/12 h-20">
+          <p className="font-gabarito text-md">levi ribeiro || 2025</p>
+        </footer>
       </div>
     </>
   );
