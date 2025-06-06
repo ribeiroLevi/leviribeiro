@@ -10,6 +10,7 @@ import SenhorPatinhas from "./assets/SenhorPatinhas.png";
 import SementinhaDoMal from "./assets/SementinhaDoMal.png";
 import MidiPie from "./assets/MidipIE.png";
 import Alexandria from "./assets/Alexandria.png";
+import MDWK from "./assets/MDWK.png";
 
 export function App() {
   return (
@@ -24,34 +25,36 @@ export function App() {
             {/*<a href="#articles">artigos</a>*/}
           </div>
         </nav>
-        <div className="w-ful h-full flex flex-col gap-1 justify-center items-center">
-          <p className="text-9xl lg:text-[307px] leading-25 lg:leading-44 font-bebas">
+        <div className="w-full h-full flex flex-col gap-1 justify-center items-center">
+          <p className=" text-9xl lg:text-[307px] leading-25 lg:leading-44 font-bebas">
             LEVI RIBEIRO
           </p>
-          <TypeAnimation
-            sequence={[
-              // Same substring at the start will only be typed out once, initially
-              "interface",
-              1000, // wait 1s before replacing "Mice" with "Hamsters"
-              "experiência do usuário",
-              1000,
-              "código",
-              1000,
-              "impressão 3d",
-              1000,
-              "interface, experiência do usuário, código, impressão 3d",
-              1000,
-            ]}
-            wrapper="p"
-            speed={50}
-            style={{
-              fontSize: "36px",
-              width: "50%",
-              display: "inline-block",
-              fontFamily: "Gabarito",
-            }}
-            repeat={Infinity}
-          />
+          <p className="mt-2">
+            <TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed out once, initially
+                "interface",
+                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                "experiência do usuário",
+                1000,
+                "código",
+                1000,
+                "impressão 3d",
+                1000,
+                "interface, experiência do usuário, código, impressão 3d",
+                1000,
+              ]}
+              wrapper="p"
+              speed={50}
+              style={{
+                fontSize: "36px",
+                width: "100%",
+                display: "inline-block",
+                fontFamily: "Gabarito",
+              }}
+              repeat={Infinity}
+            />
+          </p>
         </div>
         <MoveDown className="size-8 mb-3 -mt-9" />
       </div>
@@ -61,7 +64,7 @@ export function App() {
       >
         <div className="lg:h-92 my-32 md:my-24 lg:my-24 w-full lg:w-11/12 flex flex-col lg:flex-row items-center lg:justify-between">
           <div className="text-2xl justify-center w-1/2 flex lg:justify-start">
-            <h1 className="lg:w-1 lg:text-7xl font-gabarito font-bold lg:font-normal˜` ">
+            <h1 className="lg:w-1 lg:text-7xl font-gabarito font-bold lg:font-normal ">
               Sobre mim
             </h1>
           </div>
@@ -143,6 +146,15 @@ export function App() {
             }
           />
           <div className="gap-6 justify-center mb-24 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-16">
+            <Project
+              link=""
+              title={"MDWK26"}
+              year={"2025"}
+              description={
+                "Identidade Visual para o evento Media Week 2026 do curso Sistemas e Mídias Digitais."
+              }
+              image={MDWK}
+            />
             <Project
               link=""
               title={"The Good Dev"}
