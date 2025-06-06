@@ -11,13 +11,12 @@ export function Experiences({
   description,
 }: ExperiencesAssets) {
   return (
-    <>
-      <div className="flex flex-row text-3xl">
-        <span>{titleBold}</span>
-        <h1>{title}</h1>
+    <div className="flex flex-row justify-between items-center w-full">
+      <div className="flex flex-col lg:text-3xl">
+        <h1 className="w-5/6 lg:w-full text-xl lg:text-3xl">{title}</h1>
+        <span className=" lg:text-xl">{titleBold}</span>
       </div>
-      <p className="text-md">{dateSpan}</p>
-      <p className="text-xl pb-8">{description}</p>
-    </>
+      <p className="lg:text-3xl">{dateSpan}</p>
+    </div>
   );
 }
