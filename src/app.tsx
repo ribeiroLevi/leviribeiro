@@ -61,7 +61,7 @@ export function App() {
       >
         <div className="lg:h-92 my-32 md:my-24 lg:my-24 w-full lg:w-11/12 flex flex-col lg:flex-row items-center lg:justify-between">
           <div className="text-2xl justify-center w-1/2 flex lg:justify-start">
-            <h1 className="lg:w-1 lg:text-7xl font-gabarito font-bold lg:font-normal ">
+            <h1 className="lg:w-1 lg:text-7xl font-gabarito font-bold lg:font-normal˜` ">
               Sobre mim
             </h1>
           </div>
