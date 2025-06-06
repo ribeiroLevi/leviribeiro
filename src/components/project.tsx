@@ -15,7 +15,7 @@ export function Project({
 }: ProjectProps) {
   return (
     <a href={link}>
-      <div>
+      <div className="hover:scale-110 transition delay-50 duration-300 ease-in-out">
         <img className="w-full mx-auto rounded-2xl mb-3" src={image} alt="" />
         <div className="flex flex-col items-baseline">
           <p className="text-2xl">{title}</p>
