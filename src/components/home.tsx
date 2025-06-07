@@ -141,7 +141,7 @@ export function Home() {
           />
           <div className="gap-6 justify-center mb-24 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-16">
             <Project
-              link=""
+              link="/project/mdwk"
               title={"MDWK26"}
               year={"2025"}
               description={
@@ -177,7 +177,7 @@ export function Home() {
               image={Deck}
             />
             <Project
-              link="https://github.com/ribeiroLevi/MidiPie"
+              link="/project/midipie"
               title={"MidiPie"}
               year={"2024"}
               description={
