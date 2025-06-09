@@ -1,10 +1,12 @@
-interface FullProject {
-  title: String;
+interface FullProjectProps {
+  title: string;
   fullPic: string;
-  description: String;
-  links?: String[];
+  pics: string[];
+  description: string[];
+  links?: string[];
 }
 
+import ReactMarkdown from "react-markdown";
 import { Footer } from "./footer";
 import { ProjectHeader } from "./projectHeader";
 
@@ -13,31 +15,52 @@ export function FullProject({
   fullPic,
   description,
   links,
-}: FullProject) {
+  pics,
+}: FullProjectProps) {
   return (
     <div className="w-full flex justify-center items-center flex-col">
-      <ProjectHeader></ProjectHeader>
+      <ProjectHeader />
+
       <div className="w-full flex flex-col gap-10 items-center">
-        <img src={fullPic} alt="" />
-        <h1 className="font-bebas text-6xl">{title}</h1>
-        <p className="font-gabarito text-xl w-2/3">{description}</p>
-        <img className="w-2/3" src={fullPic} alt="" />
-        {/* <p className="font-gabarito text-xl w-2/3">
-          "Cozinhar" quando utilizado para se referir ao processo de produção
-          musical, é comumente relacionado ao ato de produzir algo muito bom.
-          Mas, de maneira geral, a gíria se relaciona ao processo de
-          construir/fazer qualquer coisa muito boa.Com isso em mente, da semana
-          passada pra cá eu peguei pra refazer esse projetinho antigo que eu
-          comecei mas não terminei. Ele é um sintetizador WEB que pega sinais
-          MIDI e os transforma em ondas sonoras. Elas podem ser manipuladas de
-          algumas formas - na aplicação da pra alterar frequência, wave shape,
-          gain e sustain.Como ele foi um projeto iniciado a bastante tempo, sua
-          construção estava sendo feita em JavaScript e resolvi termina-lo com
-          os arquivos que já existiam. Devo admitir que voltar a utilizar js
-          depois de quase 6 meses teve suas dificuldades, mas valeu a pena.
-        </p> */}
+        <img src={fullPic} alt={`${title} header`} className="w-full" />
+
+        <h1 className="font-bebas text-6xl text-center">{title}</h1>
+
+        <div className="prose font-gabarito text-xl w-2/3 space-y-6">
+          <ReactMarkdown>{description.join("\n\n")}</ReactMarkdown>
+        </div>
+
+        {pics.map((pic, index) => (
+          <img
+            key={index}
+            className="w-2/3"
+            src={pic}
+            alt={`${title} secondary`}
+          />
+        ))}
+
+        {links && links.length > 0 && (
+          <div className="mt-6 font-gabarito text-lg space-y-2">
+            <h2 className="text-2xl font-semibold">Related Links</h2>
+            <ul className="list-disc list-inside">
+              {links.map((link, index) => (
+                <li key={index}>
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
-      <Footer></Footer>
+
+      <Footer />
     </div>
   );
 }

@@ -159,7 +159,7 @@ export function Home() {
               image={TheGoodDev}
             />
             <Project
-              link=""
+              link="/project/zefiro"
               title={"Zéfiro"}
               year={"2025"}
               description={
