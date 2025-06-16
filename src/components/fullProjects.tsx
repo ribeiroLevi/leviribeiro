@@ -1,8 +1,10 @@
 interface FullProjectProps {
   title: string;
   fullPic: string;
-  pics: string[];
-  description: string[];
+  blocks: (
+    | { type: "text"; content: string }
+    | { type: "image"; src: string }
+  )[];
   links?: string[];
 }
 
@@ -13,9 +15,8 @@ import { ProjectHeader } from "./projectHeader";
 export function FullProject({
   title,
   fullPic,
-  description,
+  blocks,
   links,
-  pics,
 }: FullProjectProps) {
   return (
     <div className="w-full flex justify-center items-center flex-col">
@@ -26,18 +27,33 @@ export function FullProject({
 
         <h1 className="font-bebas text-6xl text-center">{title}</h1>
 
-        <div className="prose font-gabarito text-xl w-2/3 space-y-6">
-          <ReactMarkdown>{description.join("\n\n")}</ReactMarkdown>
-        </div>
+        <div className="w-2/3 flex flex-col gap-10">
+          {blocks.map((block, index) => {
+            if (block.type === "text") {
+              return (
+                <div
+                  key={index}
+                  className="prose font-gabarito text-xl space-y-6"
+                >
+                  <ReactMarkdown>{block.content}</ReactMarkdown>
+                </div>
+              );
+            }
 
-        {pics.map((pic, index) => (
-          <img
-            key={index}
-            className="w-2/3"
-            src={pic}
-            alt={`${title} secondary`}
-          />
-        ))}
+            if (block.type === "image") {
+              return (
+                <img
+                  key={index}
+                  className="w-full"
+                  src={block.src}
+                  alt={`${title} extra`}
+                />
+              );
+            }
+
+            return null;
+          })}
+        </div>
 
         {links && links.length > 0 && (
           <div className="mt-6 font-gabarito text-lg space-y-2">

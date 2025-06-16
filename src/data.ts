@@ -1,15 +1,27 @@
 import MidiPieBanner from "./assets/midipieBanner.png";
 import MDWKBanner from "./assets/MDWKBANNER.png";
+import VentarolasPic from "./assets/VentarolasTitle.png";
+import ZefiroBanner from "./assets/ZefiroBannerpng.png"
+import ZefiroPosters from "./assets/ZefiroPosters.png"
+import MDWKPicA from "./assets/MDWKPicA.png"
+import MDWKPicB from "./assets/MDWKPicb.png"
 
 export const projects = [
   {
     path: "/project/midipie",
     title: "MidiPie: Cozinhe - praticamente - em qualquer lugar.",
     fullPic: MidiPieBanner,
-    pics: [MidiPieBanner, MDWKBanner],
-    description: `
+    blocks: [
+      {
+        type: "text",
+        content: `
 Cozinhar, quando utilizado para se referir ao processo de produção musical, é comumente relacionado ao ato de produzir algo muito bom. Mas, de maneira geral, a gíria se relaciona ao processo de construir/fazer qualquer coisa muito boa.
-
+        `,
+      },
+      { type: "image", src: MidiPieBanner },
+      {
+        type: "text",
+        content: `
 Com isso em mente, da semana passada pra cá eu peguei pra refazer esse projetinho antigo que eu comecei mas não terminei. Ele é um sintetizador WEB que pega sinais MIDI e os transforma em ondas sonoras. Elas podem ser manipuladas de algumas formas — na aplicação dá pra alterar frequência, wave shape, gain e sustain.
 
 Como ele foi um projeto iniciado há bastante tempo, sua construção estava sendo feita em JavaScript e resolvi terminá-lo com os arquivos que já existiam. Devo admitir que voltar a utilizar JS depois de quase 6 meses teve suas dificuldades, mas valeu a pena.
@@ -17,50 +29,92 @@ Como ele foi um projeto iniciado há bastante tempo, sua construção estava sen
 Apesar de ser um projeto antigo, ele foi fundamental para me tirar da zona de conforto de programar apenas landing pages ou sites empresariais.
 
 Em um futuro próximo tenho vontade de construir um sintetizador maior e com mais manipulações de onda ao estilo Moog.
-`,
+        `,
+      },
+      { type: "image", src: MDWKBanner },
+    ],
   },
   {
     path: "/project/mdwk",
     title: "Marca Media Week 2026",
-    pics: [MDWKBanner],
     fullPic: MDWKBanner,
-    description: [`
+    blocks: [
+      {
+        type: "text",
+        content: `
 Media Week é um evento anual do curso de Sistemas e Mídias Digitais onde os alunos podem assistir e ministras
 palestras e oficinas dentro das quatro grande áreas do curso: Audiovisual, Jogos, Programação e Design. O evento
 visa promover a integração entre as áreas e os alunos sendo um grande incentivo à multidisciplinaridade.
 
 Durante a disciplina de Comunicação Visual II os alunos, em grupos, devem construir a identidade visual do evento
 do ano seguinte, está foi a que desenvolvi.
-
+        `,
+      },
+      { type: "image", src: MDWKPicB },
+      {
+        type: "text",
+        content: `
 Guiado pela ideia de "Diversidade, Empoderamento e Inspiração" construímos ícones para representar as Trilhas do
 curso - "Trilhas" é o nome carinhoso que as áreas recebem dentro do curso.
 
-  Olho — representa o Audiovisual. Nossa inspiração foi, obviamente o olho humano, pois ele permeia todos os
-  processos do campo do Audiovisual. Contudo, não apenas isso, ele também representa o obturador de um câmera 
-  que funciona como os olhos do equipamento
+Olho — representa o Audiovisual. Nossa inspiração foi, obviamente o olho humano, pois ele permeia todos os
+processos do campo do Audiovisual. Contudo, não apenas isso, ele também representa o obturador de um câmera 
+que funciona como os olhos do equipamento
 
-  Direcional — representa a trilha de Jogos. No curso, o campo dos Jogos Digitais é o mais estudado, assim nada
-  melhor que o direcional de um controle de video game para representar essa Trilha.
+Direcional — representa a trilha de Jogos. No curso, o campo dos Jogos Digitais é o mais estudado, assim nada
+melhor que o direcional de um controle de video game para representar essa Trilha.
 
-  Chaves — representam Programação. Tentamos sair do óbvio, mas sem perder a identificação. Então optamos por
-  utilizar um símbolo mais interno da comunidade mas que fugisse do clichê '</>'
+Chaves — representam Programação. Tentamos sair do óbvio, mas sem perder a identificação. Então optamos por
+utilizar um símbolo mais interno da comunidade mas que fugisse do clichê '</>'
 
-  Cursor — representa Design Digital. No curso, o ramo do Design Digital é o mais trabalhado - UI, UX, Design de
-  Interação e Design Gráfico. Toda essa área é permeada por uma coisa: O cursor do mouse. Assim, decidimos consolidar
-  o campo neste símbolo simples mas poderoso.
-`],
+Cursor — representa Design Digital. No curso, o ramo do Design Digital é o mais trabalhado - UI, UX, Design de
+Interação e Design Gráfico. Toda essa área é permeada por uma coisa: O cursor do mouse. Assim, decidimos consolidar
+o campo neste símbolo simples mas poderoso.
+        `,
+      },
+      { type: "image", src: MDWKPicA },
+    ],
   },
   {
     path: "/project/zefiro",
     title: "Zéfiro: O Vento Divino",
-    pics:[],
-    fullPic: MDWKBanner,
-    description: `
-Este espaço é reservado para a futura identidade visual do evento Media Week 2026, promovido pelo curso de Sistemas e Mídias Digitais. Aqui será apresentada a proposta gráfica oficial que representará o evento em todas as suas aplicações, como materiais de divulgação, redes sociais, sinalização, brindes e apresentações. A identidade visual irá refletir os valores, a criatividade e a inovação que fazem parte da essência do curso, buscando dialogar com temas contemporâneos da mídia digital, tecnologia, design e cultura.
+    fullPic: ZefiroBanner,
+    blocks: [
+      {
+        type: "text",
+        content: `
+Um problema latente do espaço do curso de Sistemas e Mídias Digitais é o calor nos espaços de convivência
+do bloco onde o curso é sediado. Seja no térreo, no hall do primeiro e segundo andar o calor é uma constante
+para os alunos. Com isso, durante a disciplina de Semiótica Aplicada à Multimídia, os alunos recebem uma premissa
+na qual devem trabalhar interveções dentro do bloco. Nossa premissa foi: Tornar os espaços de convivência melhores.
+Seja ao dispor placas nas salas para saber se estão ocupadas ou cartazes na copa para que alimentos não sejam roubados,
+a ideia é tornar o dia-a-dia nesses espaços melhor.
 
-O conceito visual será pensado para engajar tanto o público acadêmico quanto os visitantes externos, transmitindo uma imagem moderna, acessível e alinhada com os objetivos do evento.
-
-Em breve, este espaço será atualizado com: logo oficial da Media Week 2026, paleta de cores e tipografia, elementos gráficos e padrões visuais, versões aplicadas em diferentes formatos. Fique atento às próximas atualizações!
-`,
+Primeiramente, foi feita uma pesquisa para compreender o que mais aflingia os alunos nesses espaços. O calor foi uma
+das mais comentadas. Mas como resolver um problema de infraestrutura com uma intervenção? Simples: Ventarolas! 
+        `,
+      },
+      { type: "image", src: VentarolasPic },
+      {
+        type: "text",
+        content: `Uma ventarola nada mais é que um leque, comumente, entregue de forma gratuita durante eventos
+        por ser altamente customizável e barato de produzir. A ideia era permitir que os alunos pudessem aliviar, 
+        mesmo que um pouco o calor utilizando as Ventarolas.`,  
+      },
+      { type: "image", src: ZefiroPosters },
+      { 
+        type: "text",
+        content: `Com isso, veio a inspiração para as peças gráficas: Zéfiro! Zéfiro é a personificação do "Vento Oeste"
+        sendo uma ótima representação para aquele breve sopro de vento que vai refrescar o aluno antes ou depois das aulas.
+        Então utilizei pinturas clássicas para permear todas a construção gráfica desse projeto. Sendo um trabalho em grupo,
+        fiquei responsável, majoritariamente, pela produção das peças que foram utilizadas durante o projeto - Seis pôsteres
+        e as Ventarolas em si. 
+      
+As peças se conectavam em sua disposição pelo bloco. As mais próximas à entrada - e mais distantes das Ventarolas -
+possuem cores quentes (amarelo e laranja) e frases que remetem ao calor - também contendo construções frasais típicas do linguajar
+jovem nordestino. Quanto mais próximas às Ventarolas as imagens assumem cores mais frias (azul e branco) para remeter ao frescor
+que as Ventarolas traríam.`,
+      },
+    ],
   },
 ];
