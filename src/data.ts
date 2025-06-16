@@ -35,6 +35,45 @@ Em um futuro próximo tenho vontade de construir um sintetizador maior e com mai
     ],
   },
   {
+    path: "/project/deck",
+    title: "DECK",
+    fullPic: MidiPieBanner,
+    blocks: [
+      {
+        type: "text",
+        content: `
+DECK é uma rede social criada especificamente para os alunos do curso de Sistemas e Mídias Digitais. Nela, os alunos podem mostrar o que fazem independente
+de sua área: Programação, Design, Jogos ou Audiovisual. Independente da sua área cada aluno tem seu espaço e pode ser 
+visto!
+        `,
+      },
+      { type: "image", src: MidiPieBanner },
+      {
+        type: "text",
+        content: `
+O projeto nasceu na disciplina de Projeto Integrado I, na qual os alunos devem construir um sistema completo que
+resolva um problema - para o curso, ONG's ou qualquer fim que não gere retorno financeiro. 
+
+O problema encontrado foi: 
+"Os alunos do SMD não guardam seus trabalhos", apontado por um dos professores do curso. Contudo, essa era
+a visão de apenas um dos lados do problema e foi necessário ouvir os alunos dos curso. Foi realizada uma pesquisa
+que mostrou que, na realidade, os alunos guardavam seus trabalhos mas não mostravam ou publicavam. Isso se devia,
+entre outros motivos, por medo de julgamento, insegurança e a espera pelo "trabalho merecedor" de ser postado. Assim,
+é possível perceber que o problema a ser solucionado era muito mais complexo que o mostrado inicialmente. Isso guiou
+todo o desenvolvimento do projetos`,
+      },
+      {
+        type: "text",
+        content: `
+O desenvolvimento do projeto durou cerca de 6 meses - mesmo sendo interrompido por uma greve nacional. Estive responsável
+como HEAD de UX, realizei pesquisas com os alunos e relatórios para compreender a situação que realmente ocorria. Além
+disso tembém atuei como desenvolvedor front-end desenvolvendo trechos cruciais do projeto, como o editor de texto para
+documentação dos projetos dos usuários.`,
+      },
+      { type: "image", src: MDWKBanner },
+    ],
+  },
+  {
     path: "/project/mdwk",
     title: "Marca Media Week 2026",
     fullPic: MDWKBanner,

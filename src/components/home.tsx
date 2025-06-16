@@ -170,7 +170,7 @@ export function Home() {
               image={Zefiro}
             />
             <Project
-              link="https://github.com/boxy-smd/deck-web"
+              link="/project/deck"
               title={"DECK"}
               year={"2024"}
               description={
