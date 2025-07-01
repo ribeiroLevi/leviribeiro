@@ -1,26 +1,27 @@
+import Zefiro from "./assets/ZefiroPosters.png"
+import VentarolasTitle from "./assets/VentarolasTitle.png";
 import MidiPieBanner from "./assets/midipieBanner.png";
 import MDWKBanner from "./assets/MDWKBANNER.png";
-import VentarolasPic from "./assets/VentarolasTitle.png";
-import ZefiroBanner from "./assets/ZefiroBannerpng.png"
-import ZefiroPosters from "./assets/ZefiroPosters.png"
-import MDWKPicA from "./assets/MDWKPicA.png"
-import MDWKPicB from "./assets/MDWKPicb.png"
+import midiPieBannerPNG from "./assets/midipieBanner.png";
+import MDWKPic from"./assets/MDWKPicb.png";
+import MDWKPicA from "./assets/MDWKPicA.png";
 
+import ZefiroBanner from "./assets/ZefiroBannerpng.png";
 export const projects = [
   {
     path: "/project/midipie",
     title: "MidiPie: Cozinhe - praticamente - em qualquer lugar.",
-    fullPic: MidiPieBanner,
+    fullPic: "./assets/midipieBanner.png",
     blocks: [
       {
-        type: "text",
+        type: "text" as const,
         content: `
 Cozinhar, quando utilizado para se referir ao processo de produção musical, é comumente relacionado ao ato de produzir algo muito bom. Mas, de maneira geral, a gíria se relaciona ao processo de construir/fazer qualquer coisa muito boa.
         `,
       },
-      { type: "image", src: MidiPieBanner },
+      { type: "image" as const, src: MidiPieBanner },
       {
-        type: "text",
+        type: "text" as const,
         content: `
 Com isso em mente, da semana passada pra cá eu peguei pra refazer esse projetinho antigo que eu comecei mas não terminei. Ele é um sintetizador WEB que pega sinais MIDI e os transforma em ondas sonoras. Elas podem ser manipuladas de algumas formas — na aplicação dá pra alterar frequência, wave shape, gain e sustain.
 
@@ -31,25 +32,25 @@ Apesar de ser um projeto antigo, ele foi fundamental para me tirar da zona de co
 Em um futuro próximo tenho vontade de construir um sintetizador maior e com mais manipulações de onda ao estilo Moog.
         `,
       },
-      { type: "image", src: MDWKBanner },
+      { type: "image" as const, src: MDWKBanner },
     ],
   },
   {
     path: "/project/deck",
     title: "DECK",
-    fullPic: MidiPieBanner,
+    fullPic: "./assets/midipieBanner.png",
     blocks: [
       {
-        type: "text",
+        type: "text" as const,
         content: `
 DECK é uma rede social criada especificamente para os alunos do curso de Sistemas e Mídias Digitais. Nela, os alunos podem mostrar o que fazem independente
 de sua área: Programação, Design, Jogos ou Audiovisual. Independente da sua área cada aluno tem seu espaço e pode ser 
 visto!
         `,
       },
-      { type: "image", src: MidiPieBanner },
+      { type: "image" as const, src: midiPieBannerPNG },
       {
-        type: "text",
+        type: "text" as const,
         content: `
 O projeto nasceu na disciplina de Projeto Integrado I, na qual os alunos devem construir um sistema completo que
 resolva um problema - para o curso, ONG's ou qualquer fim que não gere retorno financeiro. 
@@ -63,14 +64,14 @@ entre outros motivos, por medo de julgamento, insegurança e a espera pelo "trab
 todo o desenvolvimento do projetos`,
       },
       {
-        type: "text",
+        type: "text" as const,
         content: `
 O desenvolvimento do projeto durou cerca de 6 meses - mesmo sendo interrompido por uma greve nacional. Estive responsável
 como HEAD de UX, realizei pesquisas com os alunos e relatórios para compreender a situação que realmente ocorria. Além
 disso tembém atuei como desenvolvedor front-end desenvolvendo trechos cruciais do projeto, como o editor de texto para
 documentação dos projetos dos usuários.`,
       },
-      { type: "image", src: MDWKBanner },
+      { type: "image" as const, src: MDWKBanner },
     ],
   },
   {
@@ -79,7 +80,7 @@ documentação dos projetos dos usuários.`,
     fullPic: MDWKBanner,
     blocks: [
       {
-        type: "text",
+        type: "text" as const,
         content: `
 Media Week é um evento anual do curso de Sistemas e Mídias Digitais onde os alunos podem assistir e ministras
 palestras e oficinas dentro das quatro grande áreas do curso: Audiovisual, Jogos, Programação e Design. O evento
@@ -89,9 +90,9 @@ Durante a disciplina de Comunicação Visual II os alunos, em grupos, devem cons
 do ano seguinte, está foi a que desenvolvi.
         `,
       },
-      { type: "image", src: MDWKPicB },
+      { type: "image" as const, src: MDWKPic },
       {
-        type: "text",
+        type: "text" as const,
         content: `
 Guiado pela ideia de "Diversidade, Empoderamento e Inspiração" construímos ícones para representar as Trilhas do
 curso - "Trilhas" é o nome carinhoso que as áreas recebem dentro do curso.
@@ -111,7 +112,7 @@ Interação e Design Gráfico. Toda essa área é permeada por uma coisa: O curs
 o campo neste símbolo simples mas poderoso.
         `,
       },
-      { type: "image", src: MDWKPicA },
+      { type: "image" as const, src: MDWKPicA },
     ],
   },
   {
@@ -120,7 +121,7 @@ o campo neste símbolo simples mas poderoso.
     fullPic: ZefiroBanner,
     blocks: [
       {
-        type: "text",
+        type: "text" as const,
         content: `
 Um problema latente do espaço do curso de Sistemas e Mídias Digitais é o calor nos espaços de convivência
 do bloco onde o curso é sediado. Seja no térreo, no hall do primeiro e segundo andar o calor é uma constante
@@ -133,16 +134,16 @@ Primeiramente, foi feita uma pesquisa para compreender o que mais aflingia os al
 das mais comentadas. Mas como resolver um problema de infraestrutura com uma intervenção? Simples: Ventarolas! 
         `,
       },
-      { type: "image", src: VentarolasPic },
+      { type: "image" as const, src: VentarolasTitle },
       {
-        type: "text",
+        type: "text" as const,
         content: `Uma ventarola nada mais é que um leque, comumente, entregue de forma gratuita durante eventos
         por ser altamente customizável e barato de produzir. A ideia era permitir que os alunos pudessem aliviar, 
         mesmo que um pouco o calor utilizando as Ventarolas.`,  
       },
-      { type: "image", src: ZefiroPosters },
+      { type: "image" as const, src: Zefiro},
       { 
-        type: "text",
+        type: "text" as const,
         content: `Com isso, veio a inspiração para as peças gráficas: Zéfiro! Zéfiro é a personificação do "Vento Oeste"
         sendo uma ótima representação para aquele breve sopro de vento que vai refrescar o aluno antes ou depois das aulas.
         Então utilizei pinturas clássicas para permear todas a construção gráfica desse projeto. Sendo um trabalho em grupo,

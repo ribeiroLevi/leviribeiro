@@ -18,7 +18,7 @@ import { Footer } from "./footer";
 export function Home() {
   return (
     <>
-      <div className="w-full flex flex-col h-screen items-center justify-center">
+      <div className="w-full flex flex-col h-screen items-center justify-centers">
         <Header></Header>
         <div className="w-full h-full flex flex-col gap-1 justify-center items-center">
           <p className=" text-9xl lg:text-[307px] leading-25 lg:leading-54 font-bebas">
