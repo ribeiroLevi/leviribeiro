@@ -4,12 +4,7 @@ interface ExperiencesAssets {
   dateSpan: String;
   description: String;
 }
-export function Experiences({
-  titleBold,
-  title,
-  dateSpan,
-  description,
-}: ExperiencesAssets) {
+export function Experiences({ titleBold, title, dateSpan }: ExperiencesAssets) {
   return (
     <div className="flex flex-row justify-between items-center w-full">
       <div className="flex flex-col lg:text-3xl">
