@@ -98,14 +98,6 @@ export function Home() {
             />
 
             <Experiences
-              titleBold={"Monitoria de Cognição e Tecnologias Digitais"}
-              title={"Monitor Remunerado"}
-              dateSpan={"2024"}
-              description={
-                "Auxiliava os alunos da disciplina de Cognição e Tecnologias Digitais no Instituto UFC Virtual."
-              }
-            />
-            <Experiences
               titleBold={"Laboratório de Computação Física"}
               title={"Bolsista Voluntário"}
               dateSpan={"2023-2025"}
@@ -113,6 +105,16 @@ export function Home() {
                 "Desenvolvi projetos que integram Eletrônica e Impressão 3D. Entre eles, projetos para o Processo Seletivo e, atualmente, desenvolve o projeto “FigMate” e compõe a equipe de projeto conjunto com o curso de Enfermagem."
               }
             />
+
+            <Experiences
+              titleBold={"Monitoria de Cognição e Tecnologias Digitais"}
+              title={"Monitor Remunerado"}
+              dateSpan={"2024"}
+              description={
+                "Auxiliava os alunos da disciplina de Cognição e Tecnologias Digitais no Instituto UFC Virtual."
+              }
+            />
+
             <Experiences
               titleBold={"Célula de Design Multimídia"}
               title={"Desenvolvedor e Pesquisador"}
@@ -122,9 +124,9 @@ export function Home() {
               }
             />
             <Experiences
-              titleBold={"iREDE"}
-              title={"Apple Developer Academy Residency - Designer UI/UX"}
-              dateSpan={"2025"}
+              titleBold={"Residência Apple Developer Academy - iREDE"}
+              title={"Designer UI/UX"}
+              dateSpan={"2025-"}
               description={
                 "Atuo como UI/UX de uma das aplicações multiplataforma (iOS, MacOS e VisionOS) para atender aos programas da Apple sediados em regiões interioranas do Brasil."
               }
@@ -141,7 +143,7 @@ export function Home() {
           />
           <div className="gap-6 justify-center mb-24 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-16">
             <Project
-              link=""
+              link="/project/mdwk"
               title={"MDWK26"}
               year={"2025"}
               description={
@@ -159,7 +161,7 @@ export function Home() {
               image={TheGoodDev}
             />
             <Project
-              link=""
+              link="/project/zefiro"
               title={"Zéfiro"}
               year={"2025"}
               description={
@@ -168,7 +170,7 @@ export function Home() {
               image={Zefiro}
             />
             <Project
-              link="https://github.com/boxy-smd/deck-web"
+              link="/project/deck"
               title={"DECK"}
               year={"2024"}
               description={
@@ -177,7 +179,7 @@ export function Home() {
               image={Deck}
             />
             <Project
-              link="https://github.com/ribeiroLevi/MidiPie"
+              link="/project/midipie"
               title={"MidiPie"}
               year={"2024"}
               description={

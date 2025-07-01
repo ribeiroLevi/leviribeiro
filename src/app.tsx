@@ -1,16 +1,28 @@
 import "./index.css";
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./components/home";
-import { Project } from "./components/project";
+import { projects } from "../src/data";
 import { FullProject } from "./components/fullProjects";
 
 export function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/project" element={<FullProject />}></Route>
+        <Route path="/" element={<Home />} />
+        {projects.map(({ path, title, fullPic, blocks, links }, idx) => (
+          <Route
+            key={idx}
+            path={path}
+            element={
+              <FullProject
+                title={title}
+                fullPic={fullPic}
+                blocks={blocks}
+                links={links}
+              />
+            }
+          />
+        ))}
       </Routes>
     </BrowserRouter>
   );
