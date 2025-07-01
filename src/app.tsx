@@ -9,7 +9,7 @@ export function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        {projects.map(({ path, title, fullPic, blocks, links }, idx) => (
+        {projects.map(({ path, title, fullPic, blocks /*links*/ }, idx) => (
           <Route
             key={idx}
             path={path}
@@ -18,7 +18,7 @@ export function App() {
                 title={title}
                 fullPic={fullPic}
                 blocks={blocks}
-                links={links}
+                /*links={links}*/
               />
             }
           />
