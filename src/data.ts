@@ -5,6 +5,8 @@ import MDWKBanner from "./assets/MDWKBANNER.png";
 import midiPieBannerPNG from "./assets/midipieBanner.png";
 import MDWKPic from"./assets/MDWKPicb.png";
 import MDWKPicA from "./assets/MDWKPicA.png";
+import BannerTheGoodDev from "./assets/theGoodDevFullPic.png"
+import TheGoodDevPicA from "./assets/TheGoodDevPicA.png"
 
 import ZefiroBanner from "./assets/ZefiroBannerpng.png";
 export const projects = [
@@ -87,10 +89,11 @@ palestras e oficinas dentro das quatro grande áreas do curso: Audiovisual, Jogo
 visa promover a integração entre as áreas e os alunos sendo um grande incentivo à multidisciplinaridade.
 
 Durante a disciplina de Comunicação Visual II os alunos, em grupos, devem construir a identidade visual do evento
-do ano seguinte, está foi a que desenvolvi.
+do ano seguinte, está foi a que desenvolvi. Abaixo o vídeo do conceito:
         `,
       },
       { type: "image" as const, src: MDWKPic },
+      { type: "embed" as const, embedUrl: `https://www.youtube.com/embed/8nzRcni5nnY?si=byAdZnK6K7NUa1L3` },
       {
         type: "text" as const,
         content: `
@@ -156,5 +159,60 @@ jovem nordestino. Quanto mais próximas às Ventarolas as imagens assumem cores 
 que as Ventarolas traríam.`,
       },
     ],
-  },
+  },{
+    path: "/project/tgd",
+    title: "The Good Dev",
+    fullPic: BannerTheGoodDev,
+    blocks: [
+      {
+        type: "text" as const,
+        content: `O The Good Dev foi, de longe, o projeto mais desafiador da minha vida. A ideia dele é simular o processo de
+        desenvolvimento de um jogo, onde o Jogador (Dev) deve equilibrar as necessidades do mercado, do estúdio para o qual trabalha e
+        o bem estar do público. O Jogador, usuário real, é confrontado com desafios reais do mercado de jogos: "Como fazer os usuários
+        passarem mais tempo dentro do jogo?" ou "Como reutilizar recursos no jogo?". E deve escolher uma entre quatro alternativas, duas
+        positivas e duas negativas, suas escolhas moldam como a base de jogadores se comporta e se sente dentro de quatro parâmetros.
+        `,
+      },
+      {
+        type: "text" as const,
+        content: `Esses parâmetros são: Poder de Escolha, Senso de Comunidade, Capacidade de Progresso e Engajamento, eles são baseados na Teoria
+        da Auto-Determinação (SDT), um framework do campo da psicologia para avaliar como fatores influenciam na motivação e no bem-estar da indivíduo.
+        No contexto do jogo, esse conceito é utilizado para metrificar o "bem-estar" da sua base de jogadores. Seu objetivo é equilibridar
+        todos esses pontos para ser o "The Good Dev".`
+      },
+      {
+        type: "text" as const,
+        content: `Caso você falhe em equilibrar esses parâmetros cairá em um dos 6 possíveis "Bad Endings". Em três desses você é um "Meh Dev",
+        que definem um desenvolvimento consistente mas que ainda fere o bem-estar da base de jogadores de algumas foram. Nos outros três você
+        é um "Bad Dev", conseguir esse status significa que você feriu o bem-estar dos usuários profundamente.`
+      },
+      { type: "image" as const, src: TheGoodDevPicA },
+      {
+        type: "text" as const,
+        content: `O jogo foi criado com a intenção de gerar a reflexão e conscientização sobre Dark Patterns em jogos. "Dark Patterns", ou padrões deceptivos,
+        são padrões de design utilizados para, intencionalmente, tirar proveito do usuário enquanto favorece o desenvolvedor. Em jogos, esse tema é muito
+        amplo e vai de Loot Boxes a eventos temporários. Muitos desses padrões já estão diluídos no mercado e comumente utilizados em diversos gêneros.`,  
+      },
+      {
+        type: "text" as const,
+        content: `Utilizei Unity para programar o jogo - fui o único programador do projeto - também participei ativamente produzindo a trilha do jogo, planejamento
+        de algumas mecânicas e design de personagens. `,  
+      },
+      { 
+        type: "text" as const,
+        content: `Em 2025, após a conclusão da beta do jogo, ele foi submetido à Student Game Design Competition da CHIPLAY 2025 - Congresso Intercional
+        de Interação Humano-Computador em Jogos - e foi indicado a três prêmios. A premiação vai ocorrer em outubro de 2025 e ocorrerá em Pittsburgh - EUA. Abaixo está o vídeo de apresentação pra competição
+        que enviamos para a competição.`,
+      },
+      {
+        type: "embed" as const,
+        embedUrl: `https://www.youtube.com/embed/_6bTYb4EUmQ?si=hCc2pikCrsh1n4uP`
+      },
+      { 
+        type: "text" as const,
+        content: `Este é um dos projetos mais complexos de que participei em minha vida acadêmica. Estamos planejando em concluir seu desenvolvimento e
+        publicá-lo na Play Store no segundo semestre de 2025. Eventualmente um port para iOS pode ser feito.`,
+      },
+    ],
+  }
 ];

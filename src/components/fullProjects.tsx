@@ -4,6 +4,7 @@ interface FullProjectProps {
   blocks: (
     | { type: "text"; content: string }
     | { type: "image"; src: string }
+    | { type: "embed"; embedUrl: string }
   )[];
   links?: string[];
 }
@@ -48,6 +49,21 @@ export function FullProject({
                   src={block.src}
                   alt={`${title} extra`}
                 />
+              );
+            }
+
+            if (block.type === "embed") {
+              return (
+                <div key={index} className="w-full aspect-video">
+                  <iframe
+                    className="w-full h-full"
+                    src={block.embedUrl}
+                    title="Embedded video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                </div>
               );
             }
 

@@ -152,7 +152,7 @@ export function Home() {
               image={MDWK}
             />
             <Project
-              link=""
+              link="/project/tgd"
               title={"The Good Dev"}
               year={"Em Andamento"}
               description={
