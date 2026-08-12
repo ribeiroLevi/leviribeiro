@@ -1,19 +1,25 @@
-import Zefiro from "./assets/ZefiroPosters.png"
+import Zefiro from "./assets/ZefiroPosters.png";
 import VentarolasTitle from "./assets/VentarolasTitle.png";
 import MidiPieBanner from "./assets/midipieBanner.png";
 import MDWKBanner from "./assets/MDWKBANNER.png";
 import midiPieBannerPNG from "./assets/midipieBanner.png";
-import MDWKPic from"./assets/MDWKPicb.png";
+import deckbanner from "./assets/deckbanner.png";
+import MDWKPic from "./assets/MDWKPicb.png";
 import MDWKPicA from "./assets/MDWKPicA.png";
-import BannerTheGoodDev from "./assets/theGoodDevFullPic.png"
-import TheGoodDevPicA from "./assets/TheGoodDevPicA.png"
+import BannerTheGoodDev from "./assets/theGoodDevFullPic.png";
+import TheGoodDevPicA from "./assets/TheGoodDevPicA.png";
+import cerejaBanner from "./assets/cerejaBanner.png";
+import cerejaConceito from "./assets/conceitoCereja.png";
+import cerejaApp from "./assets/appCereja.png";
+import cerejaRender from "./assets/RenderBCereja.png";
+import cerejaId from "./assets/IDVisualCereja.png";
 
 import ZefiroBanner from "./assets/ZefiroBannerpng.png";
 export const projects = [
   {
     path: "/project/midipie",
-    title: "MidiPie: Cozinhe - praticamente - em qualquer lugar.",
-    fullPic: "./assets/midipieBanner.png",
+    title: "MidiPie: Cozinhe em, praticamente, qualquer lugar.",
+    fullPic: midiPieBannerPNG,
     blocks: [
       {
         type: "text" as const,
@@ -34,13 +40,12 @@ Apesar de ser um projeto antigo, ele foi fundamental para me tirar da zona de co
 Em um futuro próximo tenho vontade de construir um sintetizador maior e com mais manipulações de onda ao estilo Moog.
         `,
       },
-      { type: "image" as const, src: MDWKBanner },
     ],
   },
   {
     path: "/project/deck",
     title: "DECK",
-    fullPic: "./assets/midipieBanner.png",
+    fullPic: deckbanner,
     blocks: [
       {
         type: "text" as const,
@@ -50,7 +55,6 @@ de sua área: Programação, Design, Jogos ou Audiovisual. Independente da sua �
 visto!
         `,
       },
-      { type: "image" as const, src: midiPieBannerPNG },
       {
         type: "text" as const,
         content: `
@@ -73,7 +77,6 @@ como HEAD de UX, realizei pesquisas com os alunos e relatórios para compreender
 disso tembém atuei como desenvolvedor front-end desenvolvendo trechos cruciais do projeto, como o editor de texto para
 documentação dos projetos dos usuários.`,
       },
-      { type: "image" as const, src: MDWKBanner },
     ],
   },
   {
@@ -93,7 +96,10 @@ do ano seguinte, está foi a que desenvolvi. Abaixo o vídeo do conceito:
         `,
       },
       { type: "image" as const, src: MDWKPic },
-      { type: "embed" as const, embedUrl: `https://www.youtube.com/embed/8nzRcni5nnY?si=byAdZnK6K7NUa1L3` },
+      {
+        type: "embed" as const,
+        embedUrl: `https://www.youtube.com/embed/8nzRcni5nnY?si=byAdZnK6K7NUa1L3`,
+      },
       {
         type: "text" as const,
         content: `
@@ -142,10 +148,10 @@ das mais comentadas. Mas como resolver um problema de infraestrutura com uma int
         type: "text" as const,
         content: `Uma ventarola nada mais é que um leque, comumente, entregue de forma gratuita durante eventos
         por ser altamente customizável e barato de produzir. A ideia era permitir que os alunos pudessem aliviar, 
-        mesmo que um pouco o calor utilizando as Ventarolas.`,  
+        mesmo que um pouco o calor utilizando as Ventarolas.`,
       },
-      { type: "image" as const, src: Zefiro},
-      { 
+      { type: "image" as const, src: Zefiro },
+      {
         type: "text" as const,
         content: `Com isso, veio a inspiração para as peças gráficas: Zéfiro! Zéfiro é a personificação do "Vento Oeste"
         sendo uma ótima representação para aquele breve sopro de vento que vai refrescar o aluno antes ou depois das aulas.
@@ -159,7 +165,8 @@ jovem nordestino. Quanto mais próximas às Ventarolas as imagens assumem cores 
 que as Ventarolas traríam.`,
       },
     ],
-  },{
+  },
+  {
     path: "/project/tgd",
     title: "The Good Dev",
     fullPic: BannerTheGoodDev,
@@ -178,27 +185,27 @@ que as Ventarolas traríam.`,
         content: `Esses parâmetros são: Poder de Escolha, Senso de Comunidade, Capacidade de Progresso e Engajamento, eles são baseados na Teoria
         da Auto-Determinação (SDT), um framework do campo da psicologia para avaliar como fatores influenciam na motivação e no bem-estar da indivíduo.
         No contexto do jogo, esse conceito é utilizado para metrificar o "bem-estar" da sua base de jogadores. Seu objetivo é equilibridar
-        todos esses pontos para ser o "The Good Dev".`
+        todos esses pontos para ser o "The Good Dev".`,
       },
       {
         type: "text" as const,
         content: `Caso você falhe em equilibrar esses parâmetros cairá em um dos 6 possíveis "Bad Endings". Em três desses você é um "Meh Dev",
         que definem um desenvolvimento consistente mas que ainda fere o bem-estar da base de jogadores de algumas foram. Nos outros três você
-        é um "Bad Dev", conseguir esse status significa que você feriu o bem-estar dos usuários profundamente.`
+        é um "Bad Dev", conseguir esse status significa que você feriu o bem-estar dos usuários profundamente.`,
       },
       { type: "image" as const, src: TheGoodDevPicA },
       {
         type: "text" as const,
         content: `O jogo foi criado com a intenção de gerar a reflexão e conscientização sobre Dark Patterns em jogos. "Dark Patterns", ou padrões deceptivos,
         são padrões de design utilizados para, intencionalmente, tirar proveito do usuário enquanto favorece o desenvolvedor. Em jogos, esse tema é muito
-        amplo e vai de Loot Boxes a eventos temporários. Muitos desses padrões já estão diluídos no mercado e comumente utilizados em diversos gêneros.`,  
+        amplo e vai de Loot Boxes a eventos temporários. Muitos desses padrões já estão diluídos no mercado e comumente utilizados em diversos gêneros.`,
       },
       {
         type: "text" as const,
         content: `Utilizei Unity para programar o jogo - fui o único programador do projeto - também participei ativamente produzindo a trilha do jogo, planejamento
-        de algumas mecânicas e design de personagens. `,  
+        de algumas mecânicas e design de personagens. `,
       },
-      { 
+      {
         type: "text" as const,
         content: `Em 2025, após a conclusão da beta do jogo, ele foi submetido à Student Game Design Competition da CHIPLAY 2025 - Congresso Intercional
         de Interação Humano-Computador em Jogos - e foi indicado a três prêmios. A premiação vai ocorrer em outubro de 2025 e ocorrerá em Pittsburgh - EUA. Abaixo está o vídeo de apresentação pra competição
@@ -206,13 +213,68 @@ que as Ventarolas traríam.`,
       },
       {
         type: "embed" as const,
-        embedUrl: `https://www.youtube.com/embed/_6bTYb4EUmQ?si=hCc2pikCrsh1n4uP`
+        embedUrl: `https://www.youtube.com/embed/_6bTYb4EUmQ?si=hCc2pikCrsh1n4uP`,
       },
-      { 
+      {
         type: "text" as const,
         content: `Este é um dos projetos mais complexos de que participei em minha vida acadêmica. Estamos planejando em concluir seu desenvolvimento e
         publicá-lo na Play Store no segundo semestre de 2025. Eventualmente um port para iOS pode ser feito.`,
       },
     ],
-  }
+  },
+  {
+    path: "/project/holywood",
+    title: "Cereja Holywood",
+    fullPic: cerejaBanner,
+    blocks: [
+      {
+        type: "text" as const,
+        content: `Como melhorar um produto já estabelecido no mercado? Para falar a verdade, um produto que pouca gente - se é que alguém - pensa em como melhorar. Este produto é o plástico filme. Na cadeira de Design Emocional, fui desafiado a encontrar, e resolver, os problemas deste produto. Neste desafio tive de reimaginar o plastico filme considerando os níveis camadas do Design Emocional propostas por Norman: visceral, comportamental e reflexivo `,
+      },
+      {
+        type: "text" as const,
+        content: `Durante uma primeira etapa, tive de levantar os problemas relacionados ao produto, falando diretamente com clientes (no caso, outros alunos da disciplina). Entre estes problemas estava: desperdício, dificuldade de corte e pontas perdidas no rolo. Isso estabelecido, segui para uma etapa de conceituação, no papel mesmo, para imaginar como ele funcionaria.`,
+      },
+      { type: "image" as const, src: cerejaConceito },
+      {
+        type: "text" as const,
+        content: `Em tese, isso cumpre o nível comportamental do produto, que diz respeito ao uso do mesmo.`,
+      },
+      {
+        type: "text" as const,
+        content: `Entretanto, outro requisito do desafio é adicionar uma dimensão digital ao produto. E, a partir da necessidade de diminuição de desperdício, nasce o "Na Medida". A ideia é imprimir os rolos de papel com um grid. Este grid vai guiar o corte para o usuário utilizar o papel da forma mais eficiente possível. Mas onde entra o aplicativo? Ele analisaria, a apartir de imagens da embalagem, quanto de filme seria necessário para cobrir a área desejada. Este processo permite ao usuário, que desejar, a utilizar de forma mais consciente e eficiente o produto.`,
+      },
+      { type: "image" as const, src: cerejaApp },
+      {
+        type: "text" as const,
+        content: `Depois do estabelecimento de requisitos de uso, passei para a construção da Identidade Visual. Foi estabelecido que a persona seria uma pessoa jovem, "cool" e que tem interesses que vão da culinária à tatuagem. Isso foi uma outra questão que apareceu durante as entrevistas com os usuários. O plastico filme não serve apenas para guardar comida, mas também para cobrir tatuagens no processo de cicatrização. E assim, nasciam as duas versões do "The Plastico Filme".`,
+      },
+      {
+        type: "text" as const,
+        content: `Em conceito, ambos plásticos são vendidas em caixas de metal reutilizável, que podem ser "recarregadas" comprando o refil do produto. Assim, evitando o despedício da caixa. O plástico voltado para tatuagem seria coberto por uma fina camada de pomada cicatrizante e seria reforçado quanto impermeabilização.`,
+      },
+      { type: "image" as const, src: cerejaId },
+
+      {
+        type: "text" as const,
+        content: `E esta é a cara final do "The Plastico Filme"!`,
+      },
+      { type: "image" as const, src: cerejaRender },
+      {
+        type: "text" as const,
+        content: `Este trabalho foi feito em equipe durante a disciplina de Design Emocional, em 2025. Fui responsável pelas entrevistas com os usuários, concept design do produto, os renders e também participei ativamente no processo de construção e implementação da identidade visual.`,
+      },
+    ],
+  },
+  {
+    path: "/project/meiodapraca",
+    title: "No Meio da Praça",
+    fullPic: cerejaBanner,
+    blocks: [
+      { type: "image" as const, src: cerejaConceito },
+      { type: "image" as const, src: cerejaApp },
+      { type: "image" as const, src: cerejaRender },
+      { type: "image" as const, src: cerejaId },
+    ],
+  },
 ];
