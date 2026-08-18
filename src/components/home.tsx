@@ -13,6 +13,9 @@ import SementinhaDoMal from "../assets/SementinhaDoMal.png";
 import MidiPie from "../assets/MidipIE.png";
 import Alexandria from "../assets/Alexandria.png";
 import MDWK from "../assets/MDWK.png";
+import noBorders from "../assets/NoBordersCover.png";
+
+import submundo from "../assets/FunkSubmundoCover.png";
 import { Experiences } from "./experiences";
 import { Header } from "./pageHeader";
 import { Footer } from "./footer";
@@ -36,9 +39,9 @@ export function Home() {
                   1000,
                   "código",
                   1000,
-                  "impressão 3d",
+                  "audiovisual",
                   1000,
-                  "interface, experiência do usuário, código, impressão 3d",
+                  "interface, experiência do usuário, código, audiovisual",
                   1000,
                 ]}
                 wrapper="p"
@@ -67,10 +70,12 @@ export function Home() {
           </div>
           <p className="mx-4 text-justify md:w-11/12 lg:w-1/2 lg:text-2xl font-gabarito ">
             Curso Sistemas e Mídias Digitais, na Universidade Federal do Ceará,
-            com foco em UX Researching. Apesar de trabalhar majoritariamente com
-            UI/UX, também programo em React e C# para desenvolvimento de jogos.
-            Atualmente, atuo como Game Dev e pesquisador na Célula de Design e
-            Multimídia e como designer UI/UX na Residência Apple Academy.
+            com foco em UI/UX e pesquisa acadêmica na área de Interação
+            Humano-Computador. Apesar de trabalhar majoritariamente com UI/UX,
+            também programo em React, front-end, e C#, para desenvolvimento de
+            jogos. Atualmente, atuo como pesquisador na Célula de Design e
+            Multimídia, e também como desenvolvedor e professor no projeto
+            Conectando da UFC e Ministério da Tecnologia.
           </p>
         </div>
       </div>
@@ -160,6 +165,13 @@ export function Home() {
           />
           <div className="grid justify-center grid-cols-2 gap-6 mb-24 md:grid-cols-3 lg:grid-cols-5 gap-y-16">
             <Project
+              link="/project/submundo"
+              title={"Funk Submundo: Apocalipse Sonoro na Favela"}
+              year={"2026"}
+              description={"Editorial que explica as origens do Funk Submundo."}
+              image={submundo}
+            />
+            <Project
               link="/project/meiodapraca"
               title={"No Meio da Praça"}
               year={"2026"}
@@ -167,6 +179,15 @@ export function Home() {
                 "Podcast Narrativo sobre a história do Passeio Público de Fortaleza."
               }
               image={nomeiodapraca}
+            />
+            <Project
+              link="/project/noborders"
+              title={"NoBorders"}
+              year={"2025"}
+              description={
+                "Ambiente Educional multiplataforma para VisionOS e MacOS."
+              }
+              image={noBorders}
             />
             <Project
               link="/project/holywood"
