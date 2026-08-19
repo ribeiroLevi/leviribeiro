@@ -259,6 +259,11 @@ A distribuição espacial das peças acompanhava a temperatura do ambiente: nas 
         type: "text" as const,
         content: `Como resultado, o projeto conseguiu não apenas registrar a relevância sociocultural de um gênero periférico de nicho, mas também demonstrar a capacidade de integrar design, código e produção fonográfica em um produto multimídia coeso, acessível publicamente e alinhado com as discussões contemporâneas de comunicação e mídia.`,
       },
+      {
+        type: "link" as const,
+        url: "https://submundo-ashen.vercel.app/",
+        label: "Acessar site do projeto",
+      },
     ],
   },
   {
